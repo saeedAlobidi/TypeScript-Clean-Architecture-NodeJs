@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node main.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "db_first": "typeorm-model-generator -h localhost -d Doctor -u mms -x mms -e mssql -o ./Domain/Entities -s dbo,General, Doctor,Patient,Setting"
   },
   "author": "saeed mohammed alabidi /saeed1adm@gmail.com",
   "license": "ISC",
@@ -15,7 +16,8 @@
     "@types/node": "^16.11.8",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "typeorm-model-generator": "^0.4.6"
   },
   "dependencies": {
     "automapper-ts": "^1.9.0",
@@ -23,6 +25,7 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "i18next": "^21.5.3",
     "mssql": "^7.2.1",
     "tsyringe": "^4.6.0",
     "typeorm": "^0.2.41"

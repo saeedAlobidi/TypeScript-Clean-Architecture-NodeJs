@@ -1,8 +1,8 @@
 
 
 import {injectable, inject,container} from "tsyringe";
-import UserController from '../Controller/UserController' 
- 
+import ExceptionHandler from '../Core/ExceptionHandler' 
+
 export default class PipeLine {
    
     constructor(app) {
@@ -12,6 +12,7 @@ export default class PipeLine {
     async initPipline(app) {
      
         app.use("/api/User", container.resolve("UserControllser"))
+        app.use(ExceptionHandler);
     }
 
     

@@ -25,7 +25,8 @@ This is an example of a simple CRUD application for enterprise applications with
 	2-TypeScript<br />
     3-express  <br />
     4-typeorm <br />
-     5-tsyringe <br />
+	5-localization(multi language) <br />
+    5-tsyringe <br />
 	 
 	5-test-utils <br /> 
 	8-git clone  <br />
